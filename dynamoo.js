@@ -12,7 +12,7 @@ var moment = require("moment");
 // globals
 var backoff = 0;
 var home = process.env.HOME || process.env.HOMEPATH || process.env.USERPROFILE;
-var hostname = require('os').hostname();
+var hostname = require('os').hostname().split('.', 1)[0];
 var configFilename = require('path').join(home, ".dynamoo.config.json");
 var config = JSON.parse(fs.readFileSync(configFilename, 'utf-8'));
 var AWS = require('aws-sdk');
