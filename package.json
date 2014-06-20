@@ -1,0 +1,14 @@
+{
+  "name": "dynamoo",
+  "description": "Simple AWS Route53 Updater",
+  "author": "Neal Hardesty <nealhardesty@yahoo.com>",
+	"license": "MIT",
+  "version": "0.0.1",
+  "private": true,
+  "dependencies": {
+		"aws-sdk": "*",
+		"underscore": "*",
+		"request": "*",
+		"moment": "*"
+  }
+}
